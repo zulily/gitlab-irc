@@ -1,5 +1,7 @@
 # gitlab-irc
 
+**Notice:** if you're looking for an IRC Bot (idling in your channel, taking commands etc.) look at my other project: [gitlab-cinch-bot](https://github.com/aleks/gitlab-cinch-bot).
+
 Tiny Sinatra App that takes POST Calls from Gitlab Web Hooks and pushes them in your IRC Channel of choice.
 
     22:59 < GitLabBot> New Commits for 'repo-name'
