@@ -3,11 +3,11 @@ require 'sinatra'
 require 'json'
 
 # IRC Config
-IRC_HOST = 'irc.freenode.org'
-IRC_PORT = 6667
-IRC_CHANNEL = '#yourchannel'
-IRC_NICK = 'GitLabBot'
-IRC_REALNAME = 'GitLabBot'
+IRC_HOST = ENV['IRC_HOST'] || 'irc.freenode.org'
+IRC_PORT = ENV['IRC_PORT'] || 6667
+IRC_CHANNEL = ENV['IRC_CHANNEL'] ||  '#yourchannel'
+IRC_NICK = ENV['IRC_NICK'] || 'GitLabBot'
+IRC_REALNAME = ENV['IRC_REALNAME'] || 'GitLabBot'
 
 post '/commit' do
 
